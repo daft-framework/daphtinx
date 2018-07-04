@@ -23,6 +23,7 @@ class Test extends Base
 
     /**
     * @param array<string, array<int, mixed>> $postConstructionCalls
+    * @param mixed ...$implementationArgs
     *
     * @dataProvider DataProviderGoodSourcesWithDatabaseConnection
     */
@@ -41,7 +42,7 @@ class Test extends Base
                 ? null
                 : $pdo->query('SELECT database()')->fetchColumn();
 
-        $this->assertInternalType(
+        static::assertInternalType(
             (
                 ('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
                     ? 'null'
@@ -52,7 +53,7 @@ class Test extends Base
 
         $configOptions = Integrator::ObtainConfig($instance);
 
-        $this->assertSame($pdo, $configOptions['connection']);
-        $this->assertSame($database, $configOptions['name']);
+        static::assertSame($pdo, $configOptions['connection']);
+        static::assertSame($database, $configOptions['name']);
     }
 }

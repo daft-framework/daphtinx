@@ -29,17 +29,21 @@
             "phpunit -vvvv",
             "phpstan analyse -c ./phpstan.neon .php_cs.dist src tests",
             "psalm",
-            "phpcpd src",
+            "phpcpd src Tests",
             "phpmnd src",
+            "phpmnd Tests",
+            "composer-require-checker check ./composer.json",
             "php-cs-fixer fix --verbose --allow-risky=yes --dry-run"
         ]
     },
     "require": {
         "php": "^7.1",
+        "ext-PDO": "^7.1",
         "robmorgan/phinx": "^0.9.2",
         "signpostmarv/daft-framework": "^0.1.8"
     },
     "require-dev": {
+        "maglnet/composer-require-checker": "dev-master",
         "phpstan/phpstan": "^0.10.1",
         "phpstan/phpstan-phpunit": "^0.10.0",
         "phpstan/phpstan-strict-rules": "^0.10.0",

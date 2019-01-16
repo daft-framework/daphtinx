@@ -31,7 +31,7 @@ class Test extends Base
         string $implementation,
         array $postConstructionCalls,
         ...$implementationArgs
-    ) : void {
+    ) {
         $instance = $this->ObtainFrameworkInstance($implementation, ...$implementationArgs);
         $this->ConfigureFrameworkInstance($instance, $postConstructionCalls);
 
@@ -51,7 +51,8 @@ class Test extends Base
                 ? $sth->fetchColumn(1)
                 : $sth->fetchColumn();
 
-        static::assertIsString(
+        static::assertInternalType(
+            'string',
             $database
         );
 

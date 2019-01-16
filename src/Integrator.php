@@ -15,11 +15,21 @@ class Integrator
     {
         $pdo = $framework->ObtainDatabaseConnection()->getPdo();
 
+        /**
+        * @var \PDOStatement
+        */
+        $sth = $pdo->query(
+            ('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
+                ? 'PRAGMA database_list;'
+                : 'SELECT database()'
+
+        );
+
         return [
             'name' => (
                 ('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
-                    ? null
-                    : $pdo->query('SELECT database()')->fetchColumn()
+                    ? $sth->fetchColumn(1)
+                    : $sth->fetchColumn()
             ),
             'connection' => $pdo,
         ];

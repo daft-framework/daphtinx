@@ -22,7 +22,6 @@ class Integrator
             ('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
                 ? 'PRAGMA database_list;'
                 : 'SELECT database()'
-
         );
 
         return [

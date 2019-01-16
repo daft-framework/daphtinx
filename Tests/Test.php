@@ -44,7 +44,6 @@ class Test extends Base
             ('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
                 ? 'PRAGMA database_list;'
                 : 'SELECT database()'
-
         );
 
         $database =

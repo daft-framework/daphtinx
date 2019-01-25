@@ -43,8 +43,8 @@
     "require": {
         "php": "^7.0,<7.1",
         "ext-PDO": "*",
-        "robmorgan/phinx": "^0.10.5",
-        "signpostmarv/daft-framework": "^0.5.0"
+        "robmorgan/phinx": "^0.10.6",
+        "signpostmarv/daft-framework": "^0.6|^0.7"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^0.1.6",
@@ -55,7 +55,7 @@
         "povils/phpmnd": "^1.1",
         "roave/security-advisories": "dev-master",
         "sebastian/phpcpd": "^3.0",
-        "signpostmarv/php-cs-fixer-config": "^0.6.0",
+        "signpostmarv/php-cs-fixer-config": "^0.6.1",
         "vimeo/psalm": "^1.1"
     }
 }

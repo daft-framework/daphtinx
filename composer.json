@@ -44,7 +44,7 @@
         "php": "^7.0,<7.0.8",
         "ext-PDO": "*",
         "robmorgan/phinx": "^0.10.6",
-        "signpostmarv/daft-framework": "^0.6|^0.7"
+        "signpostmarv/daft-framework": "^0.6.1"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^0.1.6",

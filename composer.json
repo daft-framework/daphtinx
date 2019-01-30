@@ -44,7 +44,7 @@
         "php": "^7.1",
         "ext-PDO": "*",
         "robmorgan/phinx": "^0.10.5",
-        "signpostmarv/daft-framework": "^1.0"
+        "signpostmarv/daft-framework": "^1.1"
     },
     "require-dev": {
         "infection/infection": "^0.11.5",

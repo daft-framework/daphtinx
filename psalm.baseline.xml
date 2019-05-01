@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file src="Tests\Test.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+</files>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d05a98e2ddd083dce28cea0e74ae38d9",
+    "content-hash": "ac8fed9e340a1c44f975dea909f8dc9c",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -660,16 +660,16 @@
         },
         {
             "name": "signpostmarv/daft-framework",
-            "version": "v1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SignpostMarv/daft-framework.git",
-                "reference": "12e46a7beba98d1f47680862c64b135043719dd7"
+                "reference": "fcb16abab748694b50c788e3d3c175907fdb4595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SignpostMarv/daft-framework/zipball/12e46a7beba98d1f47680862c64b135043719dd7",
-                "reference": "12e46a7beba98d1f47680862c64b135043719dd7",
+                "url": "https://api.github.com/repos/SignpostMarv/daft-framework/zipball/fcb16abab748694b50c788e3d3c175907fdb4595",
+                "reference": "fcb16abab748694b50c788e3d3c175907fdb4595",
                 "shasum": ""
             },
             "require": {
@@ -677,7 +677,7 @@
                 "paragonie/easydb": "^2.9",
                 "php": "^7.1",
                 "signpostmarv/daft-interface-collector": "^1.1",
-                "signpostmarv/daft-router": "^1.2",
+                "signpostmarv/daft-router": "dev-master",
                 "symfony/console": "^4.3",
                 "symfony/event-dispatcher": "^4.3",
                 "symfony/http-foundation": "^4.3",
@@ -714,7 +714,7 @@
                 }
             ],
             "description": "Daft Framework",
-            "time": "2019-06-08T01:23:58+00:00"
+            "time": "2019-06-08T02:15:22+00:00"
         },
         {
             "name": "signpostmarv/daft-interface-collector",
@@ -769,16 +769,16 @@
         },
         {
             "name": "signpostmarv/daft-router",
-            "version": "v1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SignpostMarv/daft-router.git",
-                "reference": "5c357494edb5789ba94b90ed4c3ffbf378e89ba6"
+                "reference": "ad34bb347dc6004dfbe854d3d274fcb6236777b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SignpostMarv/daft-router/zipball/5c357494edb5789ba94b90ed4c3ffbf378e89ba6",
-                "reference": "5c357494edb5789ba94b90ed4c3ffbf378e89ba6",
+                "url": "https://api.github.com/repos/SignpostMarv/daft-router/zipball/ad34bb347dc6004dfbe854d3d274fcb6236777b8",
+                "reference": "ad34bb347dc6004dfbe854d3d274fcb6236777b8",
                 "shasum": ""
             },
             "require": {
@@ -822,7 +822,7 @@
                 }
             ],
             "description": "Daft Router",
-            "time": "2019-06-07T21:58:18+00:00"
+            "time": "2019-06-08T00:19:02+00:00"
         },
         {
             "name": "symfony/config",
@@ -6384,7 +6384,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20
+        "signpostmarv/daft-framework": 20,
+        "roave/security-advisories": 20,
+        "signpostmarv/daft-router": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

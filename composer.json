@@ -43,7 +43,7 @@
         "php": "^7.1",
         "ext-PDO": "*",
         "robmorgan/phinx": "^0.10.7",
-        "signpostmarv/daft-framework": "^1.2"
+        "signpostmarv/daft-framework": "dev-master"
     },
     "require-dev": {
         "infection/infection": "^0.13.1",
@@ -56,6 +56,7 @@
         "psalm/plugin-phpunit": "^0.6.0",
         "roave/security-advisories": "dev-master",
         "sebastian/phpcpd": "^4.1",
+        "signpostmarv/daft-router": "dev-master",
         "signpostmarv/php-cs-fixer-config": "^0.9.0",
         "vimeo/psalm": "^3.4"
     }

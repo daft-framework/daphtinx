@@ -12,15 +12,6 @@ use SignpostMarv\DaftFramework\Tests\ImplementationTest as Base;
 
 class Test extends Base
 {
-    public function __construct(string $name = '', array $data = [], string $dataName = '')
-    {
-        parent::__construct($name, $data, $dataName);
-
-        $this->backupGlobals = false;
-        $this->backupStaticAttributes = false;
-        $this->runTestInSeparateProcess = false;
-    }
-
     /**
     * @param array<string, array<int, mixed>> $postConstructionCalls
     * @param mixed ...$implementationArgs

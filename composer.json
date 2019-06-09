@@ -40,7 +40,7 @@
         ]
     },
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "ext-PDO": "*",
         "robmorgan/phinx": "^0.10.7",
         "signpostmarv/daft-framework": "^2.0"
@@ -51,12 +51,12 @@
         "phpstan/phpstan": "^0.11.8",
         "phpstan/phpstan-phpunit": "^0.11.2",
         "phpstan/phpstan-strict-rules": "^0.11.1",
-        "phpunit/phpunit": "^7.5",
+        "phpunit/phpunit": "^8.2",
         "povils/phpmnd": "^2.1",
         "psalm/plugin-phpunit": "^0.6.0",
         "roave/security-advisories": "dev-master",
         "sebastian/phpcpd": "^4.1",
-        "signpostmarv/php-cs-fixer-config": "^0.9.0",
+        "signpostmarv/php-cs-fixer-config": "^0.10.0",
         "vimeo/psalm": "^3.4"
     }
 }

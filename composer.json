@@ -43,9 +43,10 @@
 		"php": "^7.3",
 		"ext-PDO": "*",
 		"robmorgan/phinx": "^0.10.8",
-		"signpostmarv/daft-framework": "^2.3"
+		"signpostmarv/daft-framework": "^3.0"
 	},
 	"require-dev": {
+		"ext-pdo_sqlite": "*",
 		"infection/infection": "^0.13.5",
 		"maglnet/composer-require-checker": "^2.0",
 		"php-coveralls/php-coveralls": "^2.1",

@@ -7,12 +7,14 @@ declare(strict_types=1);
 namespace SignpostMarv\DaftFramework\Phinx\Tests;
 
 use PDO;
+use SignpostMarv\DaftFramework\Framework;
 use SignpostMarv\DaftFramework\Phinx\Integrator;
 use SignpostMarv\DaftFramework\Tests\ImplementationTest as Base;
 
 class Test extends Base
 {
 	/**
+	* @param class-string<Framework> $implementation
 	* @param array<string, array<int, mixed>> $postConstructionCalls
 	* @param mixed ...$implementationArgs
 	*

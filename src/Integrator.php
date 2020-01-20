@@ -7,6 +7,7 @@ declare(strict_types=1);
 namespace SignpostMarv\DaftFramework\Phinx;
 
 use PDO;
+use PDOStatement;
 use SignpostMarv\DaftFramework\Framework;
 
 class Integrator
@@ -16,7 +17,7 @@ class Integrator
 		$pdo = $framework->ObtainDatabaseConnection()->getPdo();
 
 		/**
-		* @var \PDOStatement
+		* @var PDOStatement
 		*/
 		$sth = $pdo->query(
 			('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))

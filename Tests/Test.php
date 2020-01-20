@@ -7,6 +7,7 @@ declare(strict_types=1);
 namespace SignpostMarv\DaftFramework\Phinx\Tests;
 
 use PDO;
+use PDOStatement;
 use SignpostMarv\DaftFramework\Framework;
 use SignpostMarv\DaftFramework\Phinx\Integrator;
 use SignpostMarv\DaftFramework\Tests\ImplementationTest as Base;
@@ -20,7 +21,7 @@ class Test extends Base
 	*
 	* @dataProvider DataProviderGoodSourcesWithDatabaseConnection
 	*/
-	public function testIntegrator(
+	public function test_integrator(
 		string $implementation,
 		array $postConstructionCalls,
 		...$implementationArgs
@@ -31,7 +32,7 @@ class Test extends Base
 		$pdo = $instance->ObtainDatabaseConnection()->getPdo();
 
 		/**
-		* @var \PDOStatement
+		* @var PDOStatement
 		*/
 		$sth = $pdo->query(
 			('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))

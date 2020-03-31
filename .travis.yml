@@ -11,5 +11,6 @@ install:
 script:
   - composer run tests
   - ./vendor/bin/php-coveralls -vvv
+  - composer update --dry-run roave/security-advisories
 matrix:
   fast_finish: true

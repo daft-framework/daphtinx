@@ -4,3 +4,4 @@
 /infection.log
 /phpunit.clover
 /.phpunit.result.cache
+/psalm/cache/

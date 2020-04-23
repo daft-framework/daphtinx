@@ -17,8 +17,8 @@ class Integrator
 		$pdo = $framework->ObtainDatabaseConnection()->getPdo();
 
 		/**
-		* @var PDOStatement
-		*/
+		 * @var PDOStatement
+		 */
 		$sth = $pdo->query(
 			('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
 				? 'PRAGMA database_list;'

@@ -15,12 +15,12 @@ use SignpostMarv\DaftFramework\Tests\ImplementationTest as Base;
 class Test extends Base
 {
 	/**
-	* @param class-string<Framework> $implementation
-	* @param array<string, array<int, mixed>> $postConstructionCalls
-	* @param mixed ...$implementationArgs
-	*
-	* @dataProvider DataProviderGoodSourcesWithDatabaseConnection
-	*/
+	 * @param class-string<Framework> $implementation
+	 * @param array<string, array<int, mixed>> $postConstructionCalls
+	 * @param mixed ...$implementationArgs
+	 *
+	 * @dataProvider DataProviderGoodSourcesWithDatabaseConnection
+	 */
 	public function test_integrator(
 		string $implementation,
 		array $postConstructionCalls,
@@ -32,8 +32,8 @@ class Test extends Base
 		$pdo = $instance->ObtainDatabaseConnection()->getPdo();
 
 		/**
-		* @var PDOStatement
-		*/
+		 * @var PDOStatement
+		 */
 		$sth = $pdo->query(
 			('sqlite' === $pdo->getAttribute(PDO::ATTR_DRIVER_NAME))
 				? 'PRAGMA database_list;'
